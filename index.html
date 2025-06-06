@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <main>
+        <body>
+            <h1 id="title">Infinite Code's Survey Form_</h1>
+            <p id="description">Thank you for taking the time to help us improve :D</p>
+            <form id="survey-form">
+                <fieldset id="personal-info">
+                    <label id="name-label">Name 
+                        <input type="text" id="name" name="name" placeholder="Enter your name here" required />
+                    </label>
+                    <label id="email-label">Email 
+                        <input type="email" id="email" name="email" placeholder="Enter your email here" required />
+                    </label>
+                    <label id="number-label">Age (optional) 
+                        <input type="number" id="number" name="age" min="13" max="120" placeholder="Age" />
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label>Which option best describes your current role?</label>
+                    <select id="dropdown" required>
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Perfer not to say</option>
+                        <option value="5">Other</option>    
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label>Would you recommend my services to a friend?</label>
+
+                    <label for="yes">
+                        <input type="radio" id="yes" name="recommend" value="yes" checked />Yes
+                    </label>
+
+                    <label for="maybe">
+                        <input type="radio" id="maybe" name="recommend" value="maybe" />Maybe
+                    </label>
+
+                    <label for="no">
+                        <input type="radio" id="no" name="recommend" value="no" />Not sure
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <label>What is your favorite feature of Infinite Code?</label>
+
+                    <select id="favorite-feature" name="feature" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="1">Accessibility</option>
+                        <option value="2">Design</option>
+                        <option value="3">Content</option>
+                        <option value="4">Community</option>
+                        <option value="5">Other</option>
+                    </select>
+                </fieldset>
+
+                <fieldset id="improvements">
+                    <label>What would you like to see improved?</label>
+
+                    <label for="improvement1"><input type="checkbox" id="improvement1" name="improvement" value="Accessibility" />Accessibility</label>
+                    <label for="improvement2"><input type="checkbox" id="improvement2" name="improvement" value="Design" />Design</label>
+                    <label for="improvement3"><input type="checkbox" id="improvement3" name="improvement" value="Content" />Content</label>
+                    <label for="improvement4"><input type="checkbox" id="improvement4" name="improvement" value="Community" />Community</label>
+                    <label for="improvement5"><input type="checkbox" id="improvement5" name="improvement" value="Other" />Other</label>
+                </fieldset>
+
+                <fieldset id="comments">
+                    <label>Any comments or suggestions?</label>
+
+                    <textarea id="comment" name="comment" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+                </fieldset>
+
+
+                <fieldset>
+                    <input id="submit" type="submit">
+                </fieldset>
+                
+            </form>
+        </body>
+    </main>
+</html>
